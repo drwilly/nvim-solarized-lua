@@ -107,7 +107,7 @@ function M.load_syntax(colors)
 	syntax['CursorColumn'] = {fg=colors.none,bg=colors.base02}
 	syntax['Directory'] = {fg=colors.blue}
 	syntax['EndOfBuffer'] = {fg=colors.none,ctermfg=colors.none,ctermbg=colors.none}
-	syntax['ErrorMsg'] = {fg=colors.red,bg=colors.err_bg,style='reverse'}
+	syntax['ErrorMsg'] = {fg=colors.red,bg=utils.termtrans(colors.base03)}
 	syntax['IncSearch'] = {fg=colors.orange,style='standout'}
 	syntax['MatchParen'] = {fg=colors.base3,bg=colors.base02,style='bold'}
 	syntax['ModeMsg'] = {fg=colors.blue}
@@ -126,7 +126,7 @@ function M.load_syntax(colors)
 	syntax['Comment'] = {fg=colors.base01,style=utils.italics()}
 	syntax['Constant'] = {fg=colors.cyan}
 	syntax['CursorIM'] = {fg=colors.none,bg=colors.base1}
-	syntax['Error'] = {fg=colors.red,bg=colors.err_bg,style='bold,reverse'}
+	syntax['Error'] = {fg=colors.red,bg=utils.termtrans(colors.base03),style='bold'}
 	syntax['Identifier'] = {fg=colors.blue}
 	syntax['Ignore'] = {fg=colors.none,ctermfg=colors.none,ctermbg=colors.none}
 	syntax['PreProc'] = {fg=colors.orange}
